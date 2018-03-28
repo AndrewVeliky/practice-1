@@ -1,6 +1,4 @@
-
 export default function isTriangle(a, b, c) {
-    // Change me!
-
-    return false;
+    const result = (c < a + b && a < c + b && b < c + a);
+    return result;
 }

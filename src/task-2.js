@@ -1,6 +1,8 @@
-
 export default function getNthItem(a, n) {
-    // Change me!
+    const S = [0];
+    for (let i = 1; i <= n; i++) {
+        S.push(a - 2 * S[i - 1]);
+    }
 
-    return 0;
+    return S[n];
 }
